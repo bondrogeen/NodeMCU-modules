@@ -2,6 +2,7 @@ id  = 0
 sda = 4
 scl = 3
 i2c.setup(id, sda, scl, i2c.SLOW)
+
 -- single value
 t = {mode="Volume",value = 20}
 

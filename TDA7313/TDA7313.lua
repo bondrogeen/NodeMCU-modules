@@ -45,7 +45,7 @@ end
 return function (t)
  local x = ""
  if #t==0 then
-  x=tostring(sort(t.mode,t.value))
+  x=t.mode.."="..tostring(sort(t.mode,t.value))
  else
   for i=1,#t do
    x=x..t[i].mode.."="..tostring(sort(t[i].mode,t[i].value))..","
